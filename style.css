@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #0d0741;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px;
+    background-color: #0d0741;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* background: linear-gradient(90deg, #7904A8 0%, #0d0741 10%); First option */
+    background-image: radial-gradient(closest-corner at -10% 40% , #b408f9, #0d0741);
+    
+    /* background-image: radial-gradient(closest-corner at 15% 40% , #b408f9, #0d0741); If you use this, use blend-mode below*/
+    /* background-blend-mode: luminosity; */
+}
+
+.header-nav{
+    display: flex;
+    gap: 70px;
+}
+
+.header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}
+
+.header-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+
+.header-nav a:hover{
+    color: #b408f9;
+}
+
+.header-nav a:hover span{
+    background-color: aqua;
+}
+
+.header h1:hover{
+    color: #b408f9;
+}
+
+section.about, section.projects{
+    display: block;
+    padding: 100px 100px;
+    background-color: #0d0741;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about{
+    width: 100%;
+}
+.col-33{
+    width: 50%;
+    float: left;
+}
+.col-66{
+    width: 50%;
+    float: right;
+}
+
+.head, .desc{
+    display: block;
+}
+
+.about .head h2, .projects .head h2{
+    color: #b6a4e2;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.about .desc p {
+    color: #e1acfc;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    line-height: 110%;
+    
+}
+
+.about .button {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 40px;
+  
+}
+
+
+.about button {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 85px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+#btnprojects{
+    background-color: #8d8dda;
+    border: 2px solid transparent;
+    
+}
+
+#btnskills{
+    background-color: transparent;
+    border: 2px solid #8d8dda;
+    margin-left: 20px;
+
+}
+
+.spacing {
+    margin-top: 20px;
+}
+.spacing-2 {
+    margin-top: 40px;
+}
+
+
+
+.col-66 .container{
+    padding: 20px;
+    background-color: #b408f9;
+    border-radius: 20px;
+    width: 512px;
+    height: 415px;
+    position: relative;
+    float: right;
+}
+
+.col-66 .container p{
+    color: white;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    line-height: 110%;
+    text-align: center;
+    padding: 60px;
+    margin-top: 20px;
+}
+
+#col-66-p-2{
+    margin-top: -10%;
+    text-align: center;
+}
+
+.col-66 .container .img-fluid{
+    height: 211px;
+    width: 223px;
+    border-radius: 100%;
+    position: absolute;
+    top: -30%;
+    left: 30%;
+}
+
+.col-66-btn{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 11px;
+  border: 1px solid #000000;
+
+}
+
+.red {
+    background-color: #fa0101;
+}
+
+.yellow {
+    background-color: #f7f700;
+}
+
+.green {
+    background-color: #00f700;
+}
+
+.top{
+    position:absolute;
+    top: -30%;
+    left: 60%;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.span-bg{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -30%;
+    left: 30%;
+    background-color: #33739a;
+    filter: blur(50px);
+}
+.bg{
+    background-image: linear-gradient(90deg, #7904A8 0%, #0d0741 15%, #0d0741 85%, #7904A8 100%);
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    
+}
+
+.project {
+    display: flex;
+    padding: 50px;
+    background: linear-gradient(90deg, #3d3d7b 0%, #340665 100%);
+    border-radius: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.project-control{
+    float: left;
+    width: 25%;
+    margin: 0 40px;
+}
+
+.proj{
+    margin-bottom: 10px;
+}
+
+.project-h3{
+   color:#b1b1ca;
+   font-size: 30px;
+   font-weight: bold;
+
+
+}
+
+.project-img{
+    width: 50px;
+    height: 50px;
+}
+
+.proj {
+    display:flex;
+    width: 50%;
+}
+.project-p{
+    color: #b1b1ca;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    line-height: 110%;
+    text-align: left;
+
+}
+
