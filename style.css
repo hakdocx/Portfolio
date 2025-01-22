@@ -57,16 +57,17 @@ body{
     color: #b408f9;
 }
 
-section.about, section.projects{
+section.about, section.projects, section.skills, section.contacts{
     display: block;
     padding: 100px 100px;
     background-color: #0d0741;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#about{
+#about, #projects, #skills, #contacts{
     width: 100%;
 }
+
 .col-33{
     width: 50%;
     float: left;
@@ -80,13 +81,40 @@ section.about, section.projects{
     display: block;
 }
 
-.about .head h2, .projects .head h2{
+.about .head h2, .projects .head h2, .skills .head h2, .contacts h3, .contacts h2{
     color: #b6a4e2;
     font-size: 50px;
     font-weight: bold;
     letter-spacing: 0.1rem;
 }
 
+.contacts h3{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact p{
+    text-align: center;
+    color: #e1acfc;
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+}
+
+.contact-desc p{
+    text-align: left;
+    color: #e1acfc;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    margin: 20px 0;
+}
+
+.contact-desc p span {
+    /* color: #b5b5c4; */
+    color: #8d8dda;
+}
 .about .desc p {
     color: #e1acfc;
     font-size: 25px;
@@ -274,5 +302,96 @@ section.about, section.projects{
     line-height: 110%;
     text-align: left;
 
+}
+
+.skill-container {
+    display: flex;
+    padding: 100px;
+    background: linear-gradient(90deg, #B27FD5 0%, #b408f9 100%);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.skill {
+    float: left;
+    width: 20%;
+}
+
+.skill h2{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.skill-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+    /* padding: 50px; */
+}
+
+.skill-img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: darken;
+}
+
+.contact-form{
+    display: flex;
+    padding: 10px 50px;
+    
+}
+
+.con {
+    margin: 0px 20px;
+}
+
+input[type="email"]{
+    width: 60%;
+    padding: 13px 22px;
+    margin: 10px 10px;
+    border-radius: 8px;
+    float: left;
+    background-color: #8d8dda;
+}
+
+input::placeholder{
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+
+}
+
+input:focus{
+    outline-color: #0d0741;
+    outline-width: 2px;
+    outline-style: solid;
+    border: 2px solid #08b9f9;
+    background-color: #B27FD5;
+    
+}
+
+input[type="submit"]{
+    width: 40%;
+    padding: 15px;
+    margin: 10px 10px;
+    border: 2px solid #8d8dda;
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: #8d8dda;
+    color: #0d0741;
 }
 
